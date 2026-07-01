@@ -114,6 +114,25 @@ section { padding: 96px 0; }
     margin-bottom: 1rem;
 }
 
+.about-list {
+    list-style: none; max-width: 640px; margin-bottom: 1rem;
+}
+
+.about-list li {
+    font-size: 1.05rem; color: var(--muted);
+    padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;
+}
+
+.about-list li::before {
+    content: "▸"; position: absolute; left: 0;
+    color: var(--primary); font-weight: 700;
+}
+
+.about-list a, #about a {
+    color: var(--primary); text-decoration: none; font-weight: 500;
+}
+.about-list a:hover, #about a:hover { text-decoration: underline; }
+
 /* ── Cards ── */
 .cards {
     display: grid;
